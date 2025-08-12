@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+:root {
+    --cor01: #8d5cf6;
+    --cor_linha: #e74040;
+    --cor_fundo: #26335d;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5em;
+    background-color: var(--cor_fundo);
+}
+
+/* BANNER */
+
+section#banner {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('pexels-readymade-3847504.jpg') center/cover no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    padding: 20px;
+    font-weight: bolder;
+}
+
+h1#logo {
+    margin-left: 10px;
+    color: white;
+}
+
+section#access {
+    margin-left: 600px;
+}
+
+section#access button {
+    font-size: 1em;
+    background-color: #8d5cf6;
+    border-color: var(--cor_fundo);
+    border-radius: 10px;
+    color: white;
+}
+
+header button {
+    padding: 10px;
+}
+
+nav {
+    margin-left: 100px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    background-color: #8d5cf662;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px 0 10px;
+}
+
+nav a:hover {
+    color: black;
+}
+
+section#apresentation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 700px;
+}
+
+section#apresentation img {
+    width: 670px;
+    text-align: left;
+}
+
+section#apresentation h1 {
+    font-size: 3em;
+    width: 650px;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: bolder;
+}
+
+.desc_text {
+    color: white;
+    margin: 20px 0;
+    font-size: 1em;
+    width: 600px;
+}
+
+.intro_text {
+    color: var(--cor01);
+    font-weight: bold;
+}
+
+.apresentation_btn {
+    font-size: 1em;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+}
+
+.apresentation_btn:hover {
+    color: black;
+    border-color: black;
+    transition: transform .3s, border .3s;
+}
+
+button#btn_joinUS {
+    background-color: var(--cor01);
+    border-style: none;
+}
+
+button#btn_learnMore {
+    background-color: transparent;
+    border-style: solid;
+    border-color: white;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* ÁREA MAIN */
+
+main a {
+    color: var(--cor01);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main section {
+    display: flex;
+    margin: 150px 100px;
+}
+
+.card {
+    width: 700px;
+    height: 300px;
+    padding: 50px;
+    background-color: white;
+    margin: 20px 0;
+}
+
+.card h3 {
+    margin: 15px 0;
+}
+
+.card p {
+    color: gray;
+    margin-top: 20px;
+}
+
+.line {
+    background-color: var(--cor_linha);
+    width: 100px;
+    height: 10px;
+}
+
+.mini_line {
+    width: 75px;
+    height: 3px;
+    margin: 20px 0;
+    background-color: var(--cor_linha);
+}
+
+.sct_title {
+    color: white;
+    font-size: 2em;
+    font-weight: bolder;
+    margin: 30px 0;
+}
+
+/* Section Video Live */
+
+section#sct_video_live {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.video_container {
+    width: 600px;
+    height: 500px;
+    margin-left: 100px;
+}
+
+.video_container video {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+    display: block;
+}
+
+.video_container button {
+
+}
+
+section#sct_logos {
+    display: flex;
+    justify-content: center;
+}
+
+section#sct_logos img {
+    width: 150px;
+    color: white;
+    margin: 0 20px 0 20px;
+}
+
+section#sct_practice_advice {
+    flex-direction: column;
+}
+
+.under_card {
+    margin: 50px 50px 0 50px;
+}

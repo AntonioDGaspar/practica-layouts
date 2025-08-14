@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 1280px) and (max-width: 1919px) {
+    .card_box {
+        flex-direction: row;
+    }
+}

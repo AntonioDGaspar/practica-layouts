@@ -13,6 +13,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -45,20 +46,20 @@ h1#logo {
     color: white;
 }
 
-section#acesso {
-    margin-left: 200px;
+div#acesso {
+    margin-left: 130px;
 }
 
-section#acesso button {
+div#acesso button {
     font-size: 1em;
     background-color: #8d5cf6;
     border-color: var(--cor_fundo);
     border-radius: 10px;
     color: white;
-}
-
-header button {
     padding: 10px;
+    width: 150px;
+    border-style: none;
+    font-weight: bold;
 }
 
 nav {
@@ -131,17 +132,6 @@ section#apresentacao h1 {
     color: black;
     border-color: black;
     transition: transform .3s, border .3s;
-}
-
-button#btn_joinUS {
-    background-color: var(--cor01);
-    border-style: none;
-}
-
-button#btn_learnMore {
-    background-color: transparent;
-    border-style: solid;
-    border-color: white;
 }
 
 button {

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/desktop.css">
+</head>
+<body>
+    <header>
+            <h1> FIFO & LIFO </h1>
+            <nav>
+                <ul>
+                    <li> <a href="#">Home</a> </li>
+                    <li> <a href="#">Product</a> </li>
+                    <li> <a href="#">Pricing</a> </li>
+                    <li> <a href="##">Contact</a> </li>
+                </ul>
+                <div class="buttons_access">
+                    <button class="sections__button"> Login </button>
+                    <button class="sections__button"> JoinUS </button>
+                </div>
+            </nav>
+    </header>
+    <main>
+        <section class="sections">
+            <div class="sections__content">
+                <p class="sections__text sections__text--green"> Join US </p>
+                <h2 class="sections__title"> 25K+ STUDENTS TRUST US </h2>
+                <p class="sections__text"> Every day brings with it a fresh set of learning possibilities. </p>
+                <button class="sections__button sct_apresentation__button--get"> Get Quote Now </button>
+                <button class="sections__button sct_apresentation__button--learn"> Learn More </button>
+            </div>
+            <img src="images/none.png" alt="" class="sections__image">
+            <div class="card_box">
+                <article class="card_box__item">
+                    <img src="images/icons/circle sec-.png" alt="">
+                    <h3> Expert instruction </h3>
+                    <div class="line"></div>
+                    <p>
+                        The gradual accumulation of information about atomic and small-scale behaviour...
+                    </p>
+                </article>
+                <article class="card_box__item">
+                    <img src="images/icons/circle sec-3.png" alt="">
+                    <h3> Training Courses </h3>
+                    <div class="line"></div>
+                    <p>
+                        The gradual accumulation of information about atomic and small-scale behaviour...
+                    </p>
+                </article>
+                <article class="card_box__item">
+                    <img src="images/icons/circle sec-2.png" alt="">
+                    <h3> Expert instruction </h3>
+                    <div class="line"></div>
+                    <p>
+                        The gradual accumulation of information about atomic and small-scale behaviour...
+                    </p>
+                </article>
+            </div>
+        </section>
+        <section class="sections">
+            <img src="images/icons/logos.png" alt="Logos" class="sections__image--logos">
+        </section>
+        <section class="sections">
+            <div class="line--big"></div>
+            <div class="sections_content">
+                <h2 class="sections__title"> Every Client Matters </h2>
+                <p class="sections__text">
+                    Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics
+                </p>
+                <button class="sections__button"> Learn More </button>
+            </div>
+            <img src="images/thumb-concept-7.png" alt="" class="sections__image">
+        </section>
+        <section class="sections">
+            <div class="sections_content">
+                <p class="sections__text sections__text--green"> Practice Advice </p>
+                <h2 class="sections__title"> Our Experts Teacher </h2>
+                <p class="sections__text">
+                    Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics
+                </p>
+            </div>
+            <div class="card_box">
+                <article class="card_box__item">
+                    <img src="images/product-cover-124 sec-.png" alt="" class="card_box__image">
+                    <h3> Training Courses </h3>
+                    <div class="line"></div>
+                    <p>
+                        The gradual accumulation of information about atomic and small-scale behaviour...
+                    </p>
+                    <button class="sections__button sections_button--red"> Learn More > </button>
+                </article>
+                <article class="card_box__item">
+                    <img src="images/product-cover-125 sec-.png" alt="">
+                    <h3> Our Popular Courses </h3>
+                    <div class="line"></div>
+                    <p>
+                        The gradual accumulation of information about atomic and small-scale behaviour...
+                    </p>
+                    <button class="sections__button sections_button--red"> Learn More > </button>
+                </article>
+                <article class="card_box__item">
+                    <img src="images/product-cover-126 sec-.png" alt="">
+                    <h3> Most Popular Courses </h3>
+                    <div class="line"></div>
+                    <p>
+                        The gradual accumulation of information about atomic and small-scale behaviour...
+                    </p>
+                    <button class="sections__button sections_button--red"> Learn More > </button>
+                </article>
+        </section>
+        <section id="sct_gestao_baldes">
+            <h2> Bucket Manager </h2>
+            <h3> Add Buckets </h3>
+            <form>
+                <label for="tipo_balde"> Select the bucket type: </label>
+                <input type="button" value="FIFO" onclick="getTipo('FIFO')"></input>
+                <input type="button" value="LIFO" onclick="getTipo('LIFO')"></input>
+                <input type="button" value="Add to Storage" onclick="criarBalde()">
+                <input type="button" value="List Buckets" onclick="actulizarListaBaldes()">
+            </form>
+
+            <h3> Remove Buckets </h3>
+            <form>
+                <label for="tipo_balde"> Select the bucket type: </label>
+                <input type="button" value="FIFO" onclick="getTipo('FIFO')"></input>
+                <input type="button" value="LIFO" onclick="getTipo('LIFO')"></input>
+                <input type="button" value="Remove from Storage" onclick="removerBalde()">
+                <input type="button" value="List Buckets" onclick="actulizarListaBaldes()">
+            </form>
+
+            <button onclick="limparListaBaldes()"> Clear List </button>
+
+            <h4 style="display: none;"> Existing Buckets </h4>     
+            <ul id="lista_balde"> </ul>     
+        </section>
+    </main>
+    <footer>
+        <div class="footer__content">
+            <div class="footer__logo">
+                <p> © 2023 BrandName. All rights reserved. </p>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p> Privacy Policy | Terms of Service </p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
